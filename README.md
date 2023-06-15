@@ -6,8 +6,8 @@ A Gyűrű szövetsége különböző népekből áll össze: törpök, tündék,
 Készíts egy `dwarves` nevű `Set`-et, ami `String`-eket tárol és add hozzá **Gimli**t!
 
 <details><summary>Megoldás</summary><pre>
-Set<String> dwarves = new HashSet<>();
-dwarves.add("Gimli");
+`Set<String> dwarves = new HashSet<>();`
+`dwarves.add("Gimli");`
 </pre></details>
 
 ### Tündék
