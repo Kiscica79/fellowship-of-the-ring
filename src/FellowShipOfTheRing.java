@@ -5,9 +5,15 @@ import java.util.Set;
 
 public class FellowShipOfTheRing {
     public static void main(String[] args) {
-
-        // törpök
+        // törpök létrehozása
         Set<String> dwarves = new HashSet<>();
+
+        // egy további tömb hozzáadási a dwarves set-hez
+        String[] array = {"Ildikó", "Vince", "Kata", "Csaba"};
+        dwarves.addAll(Arrays.stream(array).toList());
+        System.out.println(dwarves.toString());
+
+        // törpökhöz hozzáadás
         dwarves.add("Gimli");
 
         // máshogy is hozzá lehet adni
