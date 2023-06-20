@@ -21,11 +21,14 @@ public class FellowShipOfTheRing {
         Set<String> humans = new HashSet<>();
         humans.add("Aragorn");
         humans.add("Boromir");
+        // egy csomagban így adom hozzá
+       //  humans.addAll(List.of("Aragorn", "Boromir"));
 
         // hobbitok
-        Set<String> hobbits = new HashSet<>(Arrays.asList("Frodo", "Sam", "Merry", "Pippin"));
-
-        Set<String> hobbitsOther = new HashSet<>(List.of("Frodo", "Sam", "Merry", "Pippin"));
+        // így hozzá lehet adni, mint tömb
+        Set<String> hobbitsOther = new HashSet<>(Arrays.asList("Frodo", "Sam", "Merry", "Pippin"));
+        // így hozzá lehet adni, mint lista
+        Set<String> hobbits = new HashSet<>(List.of("Frodo", "Sam", "Merry", "Pippin"));
 
         // Mordor
         Set<String> fellowship = new HashSet<>();
@@ -33,10 +36,11 @@ public class FellowShipOfTheRing {
         fellowship.addAll(hobbits);
         fellowship.addAll(dwarves);
         fellowship.addAll(elves);
-        fellowship.add("Gandalf");
+        fellowship.addAll(Set.of("Gandalf"));
         System.out.println(fellowship);
 
         // Itt úgyse jössz át
+        fellowship.remove("Gandalf");
         fellowship.add("Gandalf the White");
 
         // második reggeli
